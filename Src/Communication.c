@@ -18,10 +18,9 @@
  */
 int _write(int file, char *data, int len)
 {
-  for (uint16_t i = 0u; i < len; i++)
-  {
-    ITM_SendChar(data[i]);
-  }
+	for (uint16_t i = 0u; i < len; i++) {
+		ITM_SendChar(data[i]);
+	}
 
-  return len;
+	return len;
 }
